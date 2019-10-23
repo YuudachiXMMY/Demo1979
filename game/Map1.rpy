@@ -42,4 +42,4 @@ screen Map1():
     
     on "show" action Show("GetMousePos")
     #on "show" action Show("ChaControl")
-    on "show" action Show("MoveMapCamera")
+    on "show" action Show("MoveMapCamera")  

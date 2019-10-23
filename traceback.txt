@@ -61,4 +61,4 @@ NameError: The variable map_xoffset_list[map] does not exist.
 Windows-8-6.2.9200
 Ren'Py 7.3.4.596
 Demo1979 1.0
-Fri Oct 11 21:04:21 2019
+Thu Oct 17 18:22:00 2019
