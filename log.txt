@@ -1,36 +1,35 @@
-Thu Oct 17 18:21:56 2019
+Fri Jan 10 21:14:08 2020
 Windows-8-6.2.9200
-Ren'Py 7.3.4.596
+Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.07s
+Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
-Loader init took 0.03s
+Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata. took 0.03s
+Loading script took 0.08s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.10s
+Running init code took 0.07s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\93464\\AppData\\Roaming/RenPy/backups\\Demo1979':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.01s
 DPI scale factor: 1.250000
-Creating interface object took 0.11s
+Creating interface object took 0.10s
 Cleaning stores took 0.00s
 Init translation took 0.02s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.06s
-Prepare screens took 0.12s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.15s
+Save bytecode. took 0.06s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -41,7 +40,7 @@ Windowed mode.
 Screen sizes: virtual=(1920, 1080) physical=(1324, 745) drawable=(1324, 745)
 Vendor: 'Intel'
 Renderer: 'Intel(R) UHD Graphics 630'
-Version: '4.6.0 - Build 26.20.100.6913'
+Version: '4.6.0 - Build 26.20.100.7323'
 Display Info: None
 Fixed-function is blacklisted.
 Extensions:
@@ -292,67 +291,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.84200000763s
+Total time until interface ready: 1.26899981499s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.015000 seconds.
-- Frame drawn at 0.035000 seconds.
-- Frame drawn at 0.051000 seconds.
-- Frame drawn at 0.068000 seconds.
-- 0.068000 seconds to render 5 frames.
-
-Full traceback:
-  File "game/script.rpy", line 9, in script
-    call screen Map1()
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\ast.py", line 1949, in execute
-    self.call("execute")
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\ast.py", line 1937, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\statements.py", line 277, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 531, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\exports.py", line 2905, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\ui.py", line 297, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 3094, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\screen.py", line 434, in visit_all
-    self.child.visit_all(callback, seen=None)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 541, in visit_all
-    d.visit_all(callback, seen)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 543, in visit_all
-    callback(self)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\core.py", line 3094, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\behavior.py", line 857, in per_interact
-    if self.is_selected():
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\behavior.py", line 845, in is_selected
-    return is_selected(self.action)
-  File "W:\GamePython\renpy-7.3.2-sdk\renpy\display\behavior.py", line 391, in is_selected
-    return action.get_selected()
-  File "renpy/common/00action_data.rpy", line 79, in get_selected
-    return __get_field(self.object, self.field, self.kind) == self.value
-  File "renpy/common/00action_data.rpy", line 39, in _m1_00action_data__get_field
-    raise NameError("The {} {} does not exist.".format(kind, name))
-NameError: The variable map_xoffset_list[map] does not exist.
-
-While running game code:
-  File "game/script.rpy", line 9, in script
-    call screen Map1()
-  File "renpy/common/000statements.rpy", line 531, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/common/00action_data.rpy", line 79, in get_selected
-    return __get_field(self.object, self.field, self.kind) == self.value
-  File "renpy/common/00action_data.rpy", line 39, in _m1_00action_data__get_field
-    raise NameError("The {} {} does not exist.".format(kind, name))
-NameError: The variable map_xoffset_list[map] does not exist.
+- Frame drawn at 0.017667 seconds.
+- Frame drawn at 0.033667 seconds.
+- Frame drawn at 0.050667 seconds.
+- Frame drawn at 0.066667 seconds.
+- 0.066667 seconds to render 5 frames.
